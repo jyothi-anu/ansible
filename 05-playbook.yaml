@@ -1,6 +1,6 @@
 - name: play level and task level vars
-  hosts: web
-  connection : web
+  hosts: local
+  connection : local
   vars:
     course: aws in devops
     trainer: shivkumar reddy
