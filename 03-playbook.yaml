@@ -7,7 +7,7 @@
       name: nginx
       state: present
   
-  - name : install niginx
+  - name : start niginx
     ansible.builtin.service:
       name: nginx
       state: started
