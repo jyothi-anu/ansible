@@ -1,0 +1,12 @@
+- name: play level and task level vars
+  hosts: web
+  connection : web
+  vars:
+    course: aws in devops
+    trainer: shivkumar reddy
+  tasks:
+  - name: print vars
+    vars:
+      course: ansible
+    ansible.builtin.debug:
+      msg: "course is: {{ course }},trainer is {{ trainer }}"
