@@ -1,0 +1,15 @@
+<student>
+    <first_name>abhi</first_name>
+    <dob>12.11.1996</dob>
+    <phone>7894561230</phone>
+    <addresses>
+        <local_address>
+            <type>local</type>
+            <street>shobh apartment</street>
+            <flat>123</flat>
+            <city>bangalore</flat>
+        </local_address>
+
+
+
+</student>

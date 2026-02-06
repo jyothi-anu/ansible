@@ -1,0 +1,19 @@
+- students:
+  name: "sai"
+  dob: "14.06.1998"
+  phone: 8796547456
+  addresses:
+  - address_local:
+    flat : 141
+    street: "katrigupee"
+    city: "bangalore"
+
+  - address_permanent:
+    flat: 745
+    street: "vijaynage"
+    city: "hospet"
+
+
+
+    
+
