@@ -1,10 +1,10 @@
 - name: task level variables
   hosts: local
   connection: local
-  vars:
-    course: "aws and devops"
-    duration: "140hrs"
-    trainer: "shivkumar"
+  #vars:
+    # course: "aws and devops"
+    # duration: "140hrs"
+    # trainer: "shivkumar"
   tasks:
   - name: print task level variables
     #vars:
