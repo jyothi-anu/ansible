@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars_files:
-  - cour.yaml
+    - cour.yaml
   tasks:
    - name: print msg
      ansible.builtin.debug:
