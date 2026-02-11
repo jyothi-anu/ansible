@@ -1,12 +1,13 @@
 - name: install dnf package
   hosts: web
+  become: yes
   tasks:
-  - name: install nginx
-    ansible.builtin.dnf:
-    - name: nginx
-      state: present
-  - name: run and start nginx
-    ansible.builtin.service:
-    - name: nginx
-      state: started
-      enabled: yes
+   - name: install nginx
+     ansible.builtin.dnf:
+      - name: nginx
+        state: present
+   - name: run and start nginx
+     ansible.builtin.service:
+     - name: nginx
+       state: started
+       enabled: yes
