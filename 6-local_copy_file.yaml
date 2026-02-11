@@ -1,5 +1,5 @@
 - name: print local files
-  host: local
+  hosts: local
   connection: local
   vars_files:
   - cour.yaml
