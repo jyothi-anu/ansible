@@ -4,5 +4,7 @@
   vars:
     course: "devsecops with aws"
     trainer: "shivkumar"
-    ansible.builtin.debug:
-      msg: " course= {{ course}} trainer= {{ trainer }}"
+  tasks:
+    - name: print variables
+      ansible.builtin.debug:
+       msg: " course= {{ course}} trainer= {{ trainer }}"
