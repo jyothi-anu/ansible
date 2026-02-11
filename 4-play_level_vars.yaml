@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    course: devsecops with aws"
+    course: "devsecops with aws"
     trainer: "shivkumar"
     ansible.builtin.debug:
       msg: " course= {{ course}} trainer= {{ trainer }}"
