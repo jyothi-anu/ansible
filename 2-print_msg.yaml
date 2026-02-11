@@ -1,5 +1,6 @@
 - name: printing msg
   hosts: local
+  connection: local
   tasks:
   - name: print ansible msg
     ansible.builtin.debug:
