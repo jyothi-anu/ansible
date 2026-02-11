@@ -1,5 +1,5 @@
 - name: printing msg
-  hosts: web
+  hosts: local
   tasks:
   - name: print ansible msg
     ansible.builtin.debug:
