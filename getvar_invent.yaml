@@ -5,4 +5,4 @@
   tasks:
     - name: print local vars
       ansible.builtin.debug:
-        msg: "course= {{ course }} trainer= {{ trainer }}"
+        msg: "course= {{ course }} trainer= {{ trainer }} sum= {{ num1 + num2 }}"
