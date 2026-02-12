@@ -9,6 +9,8 @@
     trainer: "shivkumar"
   tasks:
     - name: print sum
+      vars:
+        course: "java"
       ansible.builtin.debug:
         #msg: "additon of 2 nums= {{ var1 + var2 }}"
         msg: "course= {{ course }} trainer= {{ trainer }}"
