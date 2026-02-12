@@ -1,8 +1,9 @@
 - name: get from local vars
-  hosts: local
-  connection: local
+  hosts: web
+  # connection: local
   gather_facts: no
   tasks:
-    - name: print local vars
+    - name: print web vars
       ansible.builtin.debug:
-        msg: "course= {{ course }} trainer= {{ trainer }} sum= {{ num1 + num2 }}"
+        msg: #"course= {{ course }} trainer= {{ trainer }} sum= {{ num1 + num2 }}"
+          - sum= {{ num1 + num2 }}
