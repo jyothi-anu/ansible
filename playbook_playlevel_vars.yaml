@@ -4,8 +4,8 @@
   vars:
     var1: 10
     var2: 20
-    sum: 10 + 20
+   # sum: 10+20
   tasks:
     - name: print sum
       ansible.builtin.debug:
-        msg: "additon of 2 nums= {{ sum }}"
+        msg: "additon of 2 nums= {{ var1 + var2 }}"
