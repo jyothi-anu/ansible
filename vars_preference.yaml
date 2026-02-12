@@ -6,8 +6,13 @@
   vars_files:
     - course.yaml
   tasks:
-  - name: "task level variable"
-    vars:
-      NAME: "task level variable"
+  - name: check task vars
+    # vars:
+    #   NAME: "task level variable"
     ansible.builtin.debug:
       msg: "name is {{ NAME }}"  
+
+      #priority of vars execution
+      #1.vars args
+      #2.task level vars
+      #3.
