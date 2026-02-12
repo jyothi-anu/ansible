@@ -3,8 +3,8 @@
   connection: local
   vars:
     NAME: "play level variable"
-  vars_files:
-    - course.yaml
+  # vars_files:
+  #   - course.yaml
   tasks:
   - name: check task vars
     # vars:
@@ -15,4 +15,4 @@
       #priority of vars execution
       #1.vars args
       #2.task level vars
-      #3.
+      #3.file vars
