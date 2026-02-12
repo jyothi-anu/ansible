@@ -1,14 +1,18 @@
 - name: all types of vars
   hosts: local
   connection: local
-  # vars:
-  #   NAME: "play level variable"
-  # vars_files:
-  #   - course.yaml
+  vars:
+    NAME: "play level variable"
+  vars_files:
+    - course.yaml
+  vars_prompt:
+    - name: username
+      prompt: "enter username"
+      private: yes
   tasks:
   - name: check task vars
-    # vars:
-    #   NAME: "task level variable"
+    vars:
+      NAME: "task level variable"
     ansible.builtin.debug:
       msg: " {{ NAME }}"  
 
@@ -17,4 +21,5 @@
       #2.task level vars
       #3.file vars
       #4.play level vars
+      #5.local vars from inventory
 
