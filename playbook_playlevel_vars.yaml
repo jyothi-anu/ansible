@@ -1,0 +1,11 @@
+- name: print play level variables
+  hosts: local
+  connection: local
+  vars:
+    var1: 10
+    var2: 20
+    sum: 10 + 20
+  tasks:
+    - name: print sum
+      ansible.builtin.debug:
+        msg: "additon of 2 nums= {{ sum }}"
