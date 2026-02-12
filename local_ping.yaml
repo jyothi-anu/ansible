@@ -1,7 +1,7 @@
 - name: ping the server
   hosts: local
   connection: local
+  gather_facts: no
   tasks:
     - name: ping local server
       ansible.builtin.ping:
-      
