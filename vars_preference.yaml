@@ -10,7 +10,7 @@
     # vars:
     #   NAME: "task level variable"
     ansible.builtin.debug:
-      msg: "name is {{ NAME }}"  
+      msg: " {{ NAME }}"  
 
       #priority of vars execution
       #1.vars args
