@@ -1,0 +1,12 @@
+- name: print sum getting another file which has variables declared
+  hosts: local
+  connection: local
+  vars_file:
+    - cou.yaml
+  tasks:
+    - name: print sum mul division
+      ansible.builtin.debug:
+        msg:
+          - sum= {{ num1 + num2 }}
+          - mul= {{ num1 - num2 }}
+          - div= {{ num1 / num2 }}
