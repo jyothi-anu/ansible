@@ -1,0 +1,8 @@
+- name: get from local vars
+  hosts: local
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: print local vars
+      ansible.builtin.debug:
+        msg: "course= {{ course }} trainer= {{ trainer }}"
