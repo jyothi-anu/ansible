@@ -1,8 +1,8 @@
 - name: all types of vars
   hosts: local
   connection: local
-  vars:
-    NAME: "play level variable"
+  # vars:
+  #   NAME: "play level variable"
   # vars_files:
   #   - course.yaml
   # vars_prompt:
