@@ -1,0 +1,13 @@
+- name: all types of vars
+  hosts: local
+  connection: local
+  vars:
+    NAME: "play level variable"
+  vars_files:
+    - course.yaml
+  tasks:
+  - name: "task level variable"
+    vars:
+      NAME: "task level variable"
+    ansible.builtin.debug:
+      msg: "name is {{ NAME }}"  
