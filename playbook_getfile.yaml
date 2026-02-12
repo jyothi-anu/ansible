@@ -1,6 +1,7 @@
 - name: print sum getting another file which has variables declared
   hosts: local
   connection: local
+  gather_facts: no
   vars_files:
     - cou.yaml
   tasks:
