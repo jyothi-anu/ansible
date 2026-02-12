@@ -1,6 +1,6 @@
 - name: get from local vars
-  hosts: web
-  # connection: local
+  hosts: local
+  connection: local
   gather_facts: no
   tasks:
     - name: print web vars
