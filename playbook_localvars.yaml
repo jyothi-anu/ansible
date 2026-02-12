@@ -5,5 +5,5 @@
     - name: print local vars
       ansible.builtin.debug:
         msg: 
-         - course=
-         - trainer=
+         - course= {{ course }}
+         - trainer= {{ trainer }}
