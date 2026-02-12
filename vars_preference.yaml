@@ -20,7 +20,7 @@
       #1.vars args
       #2.task level vars
       #3.file vars
-      #4.play level vars
-      #5.PROMPT VARS
+      #4.prompt vars
+      #5.play level vars
       #6.VARS FROM INVENTORY
 
