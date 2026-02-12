@@ -11,8 +11,8 @@
       private: yes
   tasks:
   - name: check task vars
-    vars:
-      NAME: "task level variable"
+    # vars:
+    #   NAME: "task level variable"
     ansible.builtin.debug:
       msg: " {{ NAME }}"  
 
