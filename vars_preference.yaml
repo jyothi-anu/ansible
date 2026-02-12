@@ -6,7 +6,7 @@
   # vars_files:
   #   - course.yaml
   vars_prompt:
-    - NAME: username
+    - name: NAME
       prompt: "enter username"
       private: yes
   tasks:
