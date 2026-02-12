@@ -1,7 +1,7 @@
 - name: print sum getting another file which has variables declared
   hosts: local
   connection: local
-  vars_file:
+  vars_files:
     - cou.yaml
   tasks:
     - name: print sum mul division
