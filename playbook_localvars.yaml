@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   tasks:
-    - name: print defined local vars in inventory
+    - name: print local vars
       ansible.builtin.debug:
-      msg: 
-        - course=
-        - trainer=
+        msg: 
+         - course=
+         - trainer=
