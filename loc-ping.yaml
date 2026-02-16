@@ -1,4 +1,4 @@
-- name: print the local server
+- name: ping the server
   hosts: web
   #connection: local
   tasks:
