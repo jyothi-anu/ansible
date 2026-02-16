@@ -3,3 +3,4 @@ num2: 20
 course: "aws with devsecops"
 trainer: "shivkumar reddy"
 duration: 120hrs
+NAME: "var from file"

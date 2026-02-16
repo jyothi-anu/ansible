@@ -1,0 +1,13 @@
+- name: variable priority
+  hosts: local
+  connection: local
+  vars_files:
+    - vars.yaml
+  vars:
+    NAME: "variable at play"
+  tasks:
+  - name: print variable priority
+    vars:
+      NAME: "variable at task"
+    ansible.builtin.debug:
+      msg: "{{ NAME }}"
