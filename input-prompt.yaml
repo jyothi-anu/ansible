@@ -5,7 +5,7 @@
     - name: username
       prompt: enter username
       private: no
-  vars_prompt:
+  
     - name: password
       prompt: enter password
       private: yes
