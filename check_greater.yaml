@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars_prompt:
-    name: num1 = 5
+    name: num1 
     prompt: "enter the num to check greater r not"
     private: no
   tasks:
