@@ -1,0 +1,25 @@
+- name: pint different datatypes
+  hosts: local
+  connection: local
+  vars:
+    PROGRAM: "devops with aws" #string
+    DURATION: 140 #int
+    IS_LIVE: true #bool
+    DETAILS: #map/dictionary
+      MONTHS: 4
+      TRAINER: "shivkumar reddy"
+    TOPICS: #LIST -/[]
+    - LINUX
+    - SHELL
+    - ansible
+  TASKS:
+  - name: print variables
+    ansible.builtin.debug:
+     msg: |
+      program: {{ PROGRAM }}
+      duration: {{ DURATION }}
+      is_live: {{ IS_LIVE }}
+      details: {{ DETAILS }}
+      topics: {{ TOPICS }}
+
+
