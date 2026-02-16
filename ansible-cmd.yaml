@@ -9,5 +9,5 @@
 
   - name: print date
     ansible.builtin.debug:
-      msg: "{{ mem }}"
+      msg: "{{ mem.stdout }}"
     when: mem.rc == 0
