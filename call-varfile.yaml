@@ -4,8 +4,8 @@
   vars_files:
     - vars.yaml
   tasks:
-  - name: file conents
-    ansible.builtin.debug:
+   - name: file conents
+     ansible.builtin.debug:
         msg: "sum= {{ num1 + num2 }}"
           # - sum of nums= {{ num1 + num2 }}
           # - sub of nums= {{ num1 - num2 }}
