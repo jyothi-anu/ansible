@@ -2,12 +2,12 @@
   hosts: local
   connection: local
   tasks:
-  - name: check command 
+  - name: check nginx
     # ansible.builtin.command: date
-    ansible.builtin.command: free -m
-    register: mem
+    ansible.builtin.command: systemctl status nginx 
+    # register: mem
 
-  - name: print date
-    ansible.builtin.debug:
-      msg: "{{ mem.stdout }}"
-    when: mem.rc == 0
+  # - name: print date
+  #   ansible.builtin.debug:
+  #     msg: "{{ mem.stdout }}"
+  #   when: mem.rc == 0
