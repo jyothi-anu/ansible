@@ -2,14 +2,14 @@
   hosts: local
   connection: local
   vars_prompt:
-    name: num1 
+    name: num
     prompt: "enter the num to check greater r not"
     private: no
   tasks:
   - name: check greater
     ansible.builtin.debug:
-     msg: "given num is greater than 5"
-    when: num1 > 7
+     msg: "num = num"
+    when: num > 7
   #   no_of_session: 7
   # tasks:
   # - name: to check greater
