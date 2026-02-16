@@ -6,11 +6,11 @@
   tasks:
   - name: file conents
     ansible.builtin.debug:
-        msg: 
-          - sum of nums= {{ num1 + num2 }}
-          - sub of nums= {{ num1 - num2 }}
-          - mul of nums= {{ num1 * num2 }}
-          - div of nums= {{ num1 / num2 }}
-          - course= {{ course }}
-          - trainer= {{ trainer }}
-          - duration= {{ duration }}
+        msg: "sum= {{ num1 + num2 }}"
+          # - sum of nums= {{ num1 + num2 }}
+          # - sub of nums= {{ num1 - num2 }}
+          # - mul of nums= {{ num1 * num2 }}
+          # - div of nums= {{ num1 / num2 }}
+          # - course= {{ course }}
+          # - trainer= {{ trainer }}
+          # - duration= {{ duration }}
