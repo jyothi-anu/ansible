@@ -9,7 +9,7 @@
       MONTHS: 4
       TRAINER: "shivkumar reddy"
     TOPICS: #LIST -/[]
-    - LINUX
+    - LINUX=UNIX
     - SHELL
     - ansible
   tasks:
@@ -26,7 +26,7 @@
       is_live: {{ IS_LIVE }}
       details: {{ DETAILS }}
       topics: {{ TOPICS }}
-      
+
      
 
 
