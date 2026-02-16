@@ -3,10 +3,11 @@
   connection: local
   tasks:
   - name: check command 
-    ansible.builtin.command: date
-    register: store_date
+    # ansible.builtin.command: date
+    ansible.builtin.command: whoami
+    register: store_user
 
   - name: print date
     ansible.builtin.debug:
-      msg: "{{ store_date.stdout }}"
+      msg: "{{ store_user.stdout }}"
       
