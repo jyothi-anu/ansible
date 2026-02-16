@@ -7,8 +7,8 @@
   #     private: no
   # vars_files:
   #  - vars.yaml
-  vars:
-    NAME: "variable at play"
+  # vars:
+  #   NAME: "variable at play"
   tasks:
   - name: print variable priority
     # vars:
@@ -20,3 +20,4 @@
       #vars at task
       #vars from file
       #vars from prompt
+      #vars from play
