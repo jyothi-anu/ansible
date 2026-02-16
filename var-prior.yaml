@@ -1,10 +1,10 @@
 - name: variable priority
   hosts: local
   connection: local
-  vars_prompt:
-    - name: NAME
-      prompt: "enter username"
-      private: no
+  # vars_prompt:
+  #   - name: NAME
+  #     prompt: "enter username"
+  #     private: no
   # vars_files:
   #  - vars.yaml
   vars:
@@ -19,3 +19,4 @@
       #vars as arguments
       #vars at task
       #vars from file
+      #vars from prompt
