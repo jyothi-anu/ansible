@@ -5,8 +5,8 @@
     - name: NAME
       prompt: "enter username"
       private: no
-  vars_files:
-   - vars.yaml
+  # vars_files:
+  #  - vars.yaml
   vars:
     NAME: "variable at play"
   tasks:
@@ -18,3 +18,4 @@
 
       #vars as arguments
       #vars at task
+      #vars from file
