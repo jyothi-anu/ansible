@@ -1,0 +1,25 @@
+- name: print different datatypes
+  hosts: local
+  connection: local
+  vars:
+    PROGRAM: "aws with devops" #string
+    DURATION: 140 #int
+    IS_LIVE: true #bool
+    DETAILS:  #map/dictionaary
+      MONTHS: 4
+      TRAINER: "shivkumar reddy"
+    TOPICS: #list
+    - LINUX
+    - SHELL
+    - ansible
+    tasks:
+    - name: print diff variables
+      ansible.builtin.debug:
+        msg:
+        - program= {{ PROGRAM}}
+        - duration= {{ DURATION }}
+        - is_live= {{ IS_LIVE }}
+        - details= {{ DETAILS }}
+        - topics= {{ TOPICS }}
+
+    
