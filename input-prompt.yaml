@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars_prompt:
-    - NAME: user_name
+    - NAME: username
       prompt: enter username
       private: no
   tasks:
     - name: display username
       ansible.builtin.debug:
-        msg: "username is: {{ user_name }}"
+        msg: "username is: {{ username }}"
