@@ -2,6 +2,6 @@
   hosts: local
   conents: local
   tasks:
-  - name: var from INVENTORY
-    ansible.builtin.debug:
-    msg: "sum= {{ num1 + num2 }}"
+   - name: var from INVENTORY
+     ansible.builtin.debug:
+        msg: "sum= {{ num1 + num2 }}"
