@@ -8,5 +8,5 @@
 
   - name: print date
     ansible.builtin.debug:
-      msg: "{{ store_date }}"
+      msg: "{{ store_date.stdout }}"
       
