@@ -1,6 +1,6 @@
 - name: local variable from INVENTORY
   hosts: local
-  conents: local
+  connection: local
   tasks:
    - name: var from INVENTORY
      ansible.builtin.debug:
