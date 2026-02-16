@@ -1,0 +1,12 @@
+- name: play level variable
+  hosts: local
+  connection: local
+  vars:
+    course: "learning ansible"
+    trainer: "viky"
+  tasks:
+  - name: print play level variales
+    # vars:
+    #   course: "override at task variale"
+    ansible.builtin.debug:
+      msg: "course is= {{ course }} trainer is= {{ trainer }}"
