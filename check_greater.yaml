@@ -8,7 +8,7 @@
   tasks:
   - name: check greater
     ansible.builtin.debug:
-     msg: "num = {{ num }}"
+     msg: "given num is greater"
     when: num | int > 7
   #   no_of_session: 7
   # tasks:
