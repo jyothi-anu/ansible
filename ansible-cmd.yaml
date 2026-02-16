@@ -4,10 +4,10 @@
   tasks:
   - name: check command 
     # ansible.builtin.command: date
-    ansible.builtin.command: hostname
-    register: store_user
+    ansible.builtin.command: free -m
+    register: mem
 
   - name: print date
     ansible.builtin.debug:
-      msg: "{{ store_user.stdout }}"
-      
+      msg: "{{ mem }}"
+    when: mem.rc == 0
