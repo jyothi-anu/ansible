@@ -1,13 +1,20 @@
 - name: variable priority
   hosts: local
   connection: local
+  vars_prompt:
+    - name: NAME
+      prompt: "enter username"
+      private: no
   vars_files:
-    - vars.yaml
+   - vars.yaml
   vars:
     NAME: "variable at play"
   tasks:
   - name: print variable priority
-    vars:
-      NAME: "variable at task"
+    # vars:
+    #   NAME: "variable at task"
     ansible.builtin.debug:
       msg: "{{ NAME }}"
+
+      #vars as arguments
+      #vars at task
