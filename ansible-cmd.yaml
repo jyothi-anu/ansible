@@ -1,0 +1,12 @@
+- name: ansible command module
+  hosts: local
+  connection: local
+  tasks:
+  - name: check command 
+    ansible.builtin.command: date
+    register: store-date
+
+  - name: print date
+    ansible.builtin.debug:
+      msg: "{{ store-date }}"
+      
