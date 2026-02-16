@@ -12,7 +12,7 @@
     - LINUX
     - SHELL
     - ansible
-    tasks:
+  tasks:
     - name: print diff variables
       ansible.builtin.debug:
         msg:
