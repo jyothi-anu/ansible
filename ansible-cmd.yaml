@@ -4,9 +4,9 @@
   tasks:
   - name: check command 
     ansible.builtin.command: date
-    register: store-date
+    register: store_date
 
   - name: print date
     ansible.builtin.debug:
-      msg: "{{ store-date }}"
+      msg: "{{ store_date }}"
       
