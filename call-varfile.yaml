@@ -1,0 +1,16 @@
+- name: call variable declared file into playbook
+  hosts: local
+  connection: local
+  vars_files:
+    - vars.yaml
+  tasks:
+    - name: file conents
+      ansible.builtin.debug:
+        msg: 
+          - sum of nums= {{ num1 + num2 }}
+          - sub of nums= {{ num1 - num2 }}
+          - mul of nums= {{ num1 * num2 }}
+          - div of nums= {{ num1 / num2 }}
+          - course= {{ course }}
+          - trainer= {{ trainer }}
+          - duration= {{ duration }}
