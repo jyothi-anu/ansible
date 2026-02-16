@@ -3,8 +3,9 @@
   connection: local
   tasks:
   - name: variable at task level
-    num1: 10
-    num2: 20
+    vars:
+      num1: 10
+      num2: 20
     course: "im learning ansible"
     ansible.builtin.debug:
       msg: "sum of two nums= {{ num1 + num2 }},course = {{ course }}"
