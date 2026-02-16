@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars_files:
-    - vars.yaml
+   - vars.yaml
   tasks:
    - name: file conents
      ansible.builtin.debug:
