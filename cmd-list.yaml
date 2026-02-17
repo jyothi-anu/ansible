@@ -1,0 +1,11 @@
+- name: ansible command vs shell
+  hosts: local
+  connection: local
+  tasks:
+  - name: shell module test
+    ansible.builtin.shell: ls -ltr > file.txt
+    register: file_output
+
+  - name: diplay msg
+    debug:
+      msg: "{{ file_output.stdout }}"
