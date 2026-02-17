@@ -51,4 +51,4 @@
 
   - name: final message
     debug:
-      var: var_reg
+      msg: "{{ var_reg }}"
