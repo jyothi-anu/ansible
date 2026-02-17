@@ -12,6 +12,15 @@
       apple: 150
       bannana: 0.4
       orange: 0.9
+    nested_var:
+      - name: josh
+        fruits:
+          - apple
+          - orange
+      - name: karma
+        fruits:
+          - bannana
+          - apple
   tasks:
   - name: print index 0 position
     ansible.builtin.debug:
