@@ -1,0 +1,17 @@
+- name: loop exampels
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: num
+      prompt: "enter num"
+      private: no
+    
+  tasks:
+  - name: print values based on confition
+    debug:
+      msg: "{{ item }}"
+    loop:
+    - ramesh
+    - suresh
+    - rajesh
+    when: num > 5
