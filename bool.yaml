@@ -3,6 +3,7 @@
   connection: local
   vars:
     is_live: true
+    apple_price:
     list:
     - apple
     - bannana
