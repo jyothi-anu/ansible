@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    is_live: false
+    is_live: true
     list:
     - apple
     - bannana
@@ -11,5 +11,5 @@
   - name: check true or not
     ansible.builtin.debug:
       var: list[0]
-    #   msg: "yes it is live"
-    # when: is_live
+      msg: "yes it is live"
+    when: is_live
