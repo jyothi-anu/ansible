@@ -14,4 +14,4 @@
     - ramesh
     - suresh
     - rajesh
-    when: num | int > 5
+    when: num | int < 4
