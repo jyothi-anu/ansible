@@ -1,0 +1,26 @@
+- name: print different datatypes
+  hosts: local
+  connection: local
+  vars:
+    st_course: "aws with devops"
+    it_duration: 140
+    is_live: bool
+    details:
+    - trainer: "shivkumar reddy"
+    - months: 4
+    topics: 
+    - linux
+    - shell
+    - ansible
+  tasks:
+  - name: print datatypes
+    ansible.builtin.debug:
+      msg: 
+      - "course:{{ st_course }}"
+      - "it_duration:{{ it_duration }}"
+      - "is_live:{{ is_live }}"
+      - "details:{{ details }}"
+      - "topics:{{ topics }}"
+
+
+
