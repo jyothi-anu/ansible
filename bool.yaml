@@ -12,7 +12,7 @@
       apple: 150
       bannana: 0.4
       orange: 0.9
-    nested_var:
+    fruits_basket:
       - name: josh
         fruits:
           - apple
@@ -42,3 +42,7 @@
   - name: print apple price
     debug:
       var: apple_price.stdout
+    
+  - name: get the value of appled from nested var
+    debug:
+      var: dic[fruits_basket[0].fruits[0]]
