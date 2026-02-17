@@ -46,4 +46,4 @@
   - name: get the value of appled from nested var
     debug:
       # var: dic[fruits_basket[0].fruits[0]],dic[fruits_basket[1].fruits[0]]
-      msg: "apple price is={{ dic[fruits_basket[0].fruits[0]] }}"
+      msg: "fruit price is={{ dic[fruits_basket[0].fruits[1]] }}"
