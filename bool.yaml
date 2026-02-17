@@ -8,8 +8,11 @@
     - bannana
     - orange
   tasks:
-  - name: check true or not
+  - name: print index 0 position
     ansible.builtin.debug:
       var: list[0]
+
+  - name: print yes r no
+    debug:
       msg: "yes it is live"
     when: is_live
