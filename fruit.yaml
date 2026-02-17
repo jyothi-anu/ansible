@@ -22,5 +22,5 @@
   tasks:
   - name: print datatypes
     debug:
-      var: fruits[0]
+      var: fruits_price.bannana
     
