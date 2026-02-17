@@ -1,0 +1,26 @@
+- name: diff datatypes
+  hosts: local
+  connection: local
+  vars:
+    fruits:
+      - apple
+      - orange
+      - bannana
+    fruits_price:
+      apple: 100
+      orange: 50
+      bannana: 100
+    fruits_basket:
+      - name: john
+        fruits:
+        - apple
+        - orange
+      - name: jane
+        fruits:
+        - orange
+        - bannana
+  tasks:
+  - name: print datatypes
+    debug:
+      var: fruits.apple,fruits_price[3],dic[fruits_basket[0].fruits[0]]
+    
