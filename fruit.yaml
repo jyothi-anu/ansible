@@ -22,5 +22,5 @@
   tasks:
   - name: print datatypes
     debug:
-      var: fruits[fruits_basket[0].fruits[0]]
+      var: fruits_price[fruits_basket[0].fruits[0]]
     
