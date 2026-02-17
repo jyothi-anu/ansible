@@ -23,5 +23,4 @@
 
   - name: fetch dictory specific var
     debug:
-      var: dic.apple,dic.orange
-      
+      var: dic.apple
