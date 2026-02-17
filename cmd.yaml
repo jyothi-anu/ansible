@@ -8,4 +8,4 @@
 
   - name: display value assigned in register vaar
     debug:
-      msg: "{{ users_output }}"
+      msg: "{{ users_output.stdout }}"
