@@ -10,7 +10,7 @@
   tasks:
   - name: print index 0 position
     ansible.builtin.debug:
-      var: list[0]
+      var: list[0],list[2]
 
   - name: print yes r no
     debug:
