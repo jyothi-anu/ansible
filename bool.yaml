@@ -3,8 +3,13 @@
   connection: local
   vars:
     is_live: false
+    list:
+    - apple
+    - bannana
+    - orange
   tasks:
   - name: check true or not
     ansible.builtin.debug:
+      var: list[0]
       msg: "yes it is live"
     when: is_live
