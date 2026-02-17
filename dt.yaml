@@ -6,8 +6,8 @@
     it_duration: 140
     is_live: true
     details:
-    - trainer: "shivkumar reddy"
-    - months: 4
+     trainer: "shivkumar reddy"
+     months: 4
     topics: 
     - linux
     - shell
