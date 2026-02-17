@@ -4,7 +4,7 @@
   vars:
     st_course: "aws with devops"
     it_duration: 140
-    is_live: bool
+    is_live: true
     details:
     - trainer: "shivkumar reddy"
     - months: 4
