@@ -27,4 +27,8 @@
 
   - name: get the price of a apple
     command: echo "{{ dic[apple] }}"
-      var: dic[apple].stdout
+    register: apple_price
+
+  - name: print apple price
+    debug:
+      var: apple_price.stdout
